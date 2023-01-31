@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-green-50;
+  @apply text-stone-800;
+}
+
+main {
+  @apply mx-auto max-w-sm space-y-6 py-8;
+}
+
+form {
+  @apply relative flex w-full;
+}
+
+form label {
+  @apply sr-only;
+}
+
+form input {
+  @apply block w-full;
+  @apply rounded-sm !important;
+  @apply border-stone-400 !important;
+}
+
+form input:focus {
+  @apply border-green-600 ring-green-400 !important;
+}
+
+ul {
+  @apply space-y-3;
+}
+
+ul li {
+  @apply rounded-sm border border-stone-300 bg-white outline-offset-0 hover:bg-stone-50;
+  @apply p-3 leading-tight;
+}
+
+ul li em {
+  @apply bg-amber-300 text-stone-900;
+}
+
+ul li img {
+  @apply h-10 w-10 rounded-full float-left mr-3;
+}
