@@ -34,8 +34,16 @@ ul {
 }
 
 ul li {
-  @apply rounded-sm border border-stone-300 bg-white outline-offset-0 hover:bg-stone-50;
-  @apply p-3 leading-tight;
+  @apply rounded-sm border border-stone-300 bg-white outline-offset-0;
+  @apply leading-tight;
+}
+
+ul li a {
+  @apply block p-3 hover:bg-stone-50;
+}
+
+ul li p {
+  @apply p-3;
 }
 
 ul li em {
